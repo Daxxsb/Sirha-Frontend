@@ -36,3 +36,12 @@ git clone https://github.com/TU-USUARIO/sirha-frontend.git
 cd sirha-frontend
 npm install
 npm run dev
+```
+El proyecto se levantará en: http://localhost:5173/
+
+## Diseño y Mockups
+Los mockups de baja fidelidad fueron generados en Figma, siguiendo el Manual de Identidad (tipografía Work Sans y colores institucionales).
+Incluyen las pantallas principales por rol (Estudiante, Decanatura, Administrador).
+
+Link a los wireframes en Figma:
+https://www.figma.com/make/ghLFGJcuLkyezWra8tEi2P/Wireframes-for-SIRHA-App?fullscreen=1
