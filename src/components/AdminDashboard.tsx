@@ -1,3 +1,20 @@
+/**
+ * AdminDashboard
+ *
+ * Panel principal para usuarios con rol administrador. Agrega acceso rápido a
+ * gestión de usuarios, grupos, reportes y métricas globales.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Contiene atajos a otras pantallas administrativas.
+ * - Puede limpiar la sesión (localStorage) si se implementa logout.
+ *
+ * Ejemplo:
+ * <AdminDashboard onNavigate={(screen) => setScreen(screen)} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

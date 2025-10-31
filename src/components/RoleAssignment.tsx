@@ -1,3 +1,19 @@
+/**
+ * RoleAssignment
+ *
+ * Herramienta administrativa para asignar y revocar roles de administrador y niveles
+ * asociados. Incluye matriz de permisos y lista de administradores actuales.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Permite seleccionar usuario, justificación y aplicar cambios con confirmación.
+ *
+ * Ejemplo:
+ * <RoleAssignment onNavigate={navigate} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

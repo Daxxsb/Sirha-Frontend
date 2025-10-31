@@ -14,7 +14,21 @@ interface LoginWireframeProps {
 }
 
 /**
- * Pantalla de login con selección de rol y validaciones básicas.
+ * LoginWireframe
+ *
+ * Componente de autenticación simulado para el wireframe. Permite seleccionar rol,
+ * ingresar credenciales y navegar a pantallas específicas según rol.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Detalles de implementación:
+ * - Mantiene estado local para username, password, role, error e isLoading.
+ * - handleLogin simula la autenticación; en demo acepta usuario: demo / demo123.
+ * - Guarda 'userRole' e 'isAuthenticated' en localStorage al autenticarse.
+ *
+ * Ejemplo:
+ * <LoginWireframe onNavigate={(s) => setScreen(s)} />
  */
 export function LoginWireframe({ onNavigate }: LoginWireframeProps) {
   const [selectedRole, setSelectedRole] = useState<string>('');

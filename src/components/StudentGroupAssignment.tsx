@@ -1,3 +1,19 @@
+/**
+ * StudentGroupAssignment
+ *
+ * Módulo administrativo para asignar o retirar estudiantes de grupos.
+ * Tiene pestañas para asignar/retirar, vista previa y registros recientes.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Mantiene estado local de pestaña activa y ofrece acciones con confirmación.
+ *
+ * Ejemplo:
+ * <StudentGroupAssignment onNavigate={navigate} />
+ */
+
 import React, { useState } from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

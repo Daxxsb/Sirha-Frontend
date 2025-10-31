@@ -6,6 +6,23 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '.
 import { Input } from './ui/input';
 import { Plus, Edit, Trash2, Search, ArrowLeft } from 'lucide-react';
 
+/**
+ * StudentManagement
+ *
+ * Interfaz administrativa para crear, editar y eliminar estudiantes (CRUD).
+ * Incluye búsqueda, formulario de alta rápido y tabla con paginación.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - showForm controla la visibilidad del formulario de creación.
+ * - handleLogout limpia sesión en localStorage.
+ *
+ * Ejemplo:
+ * <StudentManagement onNavigate={navigate} />
+ */
+
 export function StudentManagement({ onNavigate }: { onNavigate?: (screen: string) => void }) {
   const [showForm, setShowForm] = useState(false);
 

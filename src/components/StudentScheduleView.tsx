@@ -1,3 +1,20 @@
+/**
+ * StudentScheduleView
+ *
+ * Visualización detallada del horario por semestre con exportación y navegación
+ * entre semestres.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Permite exportar PDF y navegar a semestres anteriores/seguientes.
+ * - handleLogout limpia sesión en localStorage.
+ *
+ * Ejemplo:
+ * <StudentScheduleView onNavigate={navigate} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

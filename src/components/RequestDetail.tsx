@@ -1,3 +1,19 @@
+/**
+ * RequestDetail
+ *
+ * Vista detallada de una solicitud individual: información del estudiante,
+ * comparación de grupos, validaciones automáticas y panel de decisión.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Permite aprobar/rechazar con observaciones y guarda/limpia sesión mediante localStorage.
+ *
+ * Ejemplo:
+ * <RequestDetail onNavigate={(s) => setScreen(s)} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

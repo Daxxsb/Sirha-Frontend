@@ -1,3 +1,19 @@
+/**
+ * RequestStatus
+ *
+ * Pantalla donde el estudiante consulta el estado de sus solicitudes:
+ * pendientes, aprobadas, rechazadas y en revisión.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Renderiza filtros, tabla de resultados y badges de estado.
+ *
+ * Ejemplo:
+ * <RequestStatus onNavigate={navigate} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

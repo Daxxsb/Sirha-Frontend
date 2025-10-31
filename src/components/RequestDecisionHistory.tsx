@@ -1,3 +1,20 @@
+/**
+ * RequestDecisionHistory
+ *
+ * Muestra la línea de tiempo de decisiones y acciones relacionadas con una solicitud.
+ * Incluye eventos creados por estudiantes, sistema y revisores (decanatura).
+ *
+ * Props:
+ * - onBack: () => void
+ * - hasData?: boolean
+ *
+ * Comportamiento:
+ * - Renderiza un timeline con badges, actores y razones asociadas.
+ *
+ * Ejemplo:
+ * <RequestDecisionHistory onBack={() => navigate('request-detail')} hasData />
+ */
+
 import { ArrowLeft, Clock, CheckCircle, XCircle, User } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";

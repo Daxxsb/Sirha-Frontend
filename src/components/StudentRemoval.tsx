@@ -1,3 +1,20 @@
+/**
+ * StudentRemoval
+ *
+ * Pantalla para procesar el retiro de estudiantes de una inscripción o materia.
+ * Incluye confirmación, motivos, notificaciones y registro en historial.
+ *
+ * Props:
+ * - onBack: () => void
+ * - hasData?: boolean
+ *
+ * Comportamiento:
+ * - Contiene checklist de verificación y un bloqueo visual para acciones irreversibles.
+ *
+ * Ejemplo:
+ * <StudentRemoval onBack={() => navigate('admin-dashboard')} hasData />
+ */
+
 import { ArrowLeft, UserMinus, AlertTriangle, Search, Trash2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";

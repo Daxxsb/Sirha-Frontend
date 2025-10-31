@@ -1,3 +1,21 @@
+/**
+ * CreateRequestForm
+ *
+ * Formulario para que un estudiante solicite cambios (p. ej. cambio de grupo o materia).
+ * Incluye campos de selección de materia/grupo, justificación y subida de documentos.
+ *
+ * Props:
+ * - onSubmit?: (payload: any) => void   // callback opcional al enviar el formulario
+ * - onCancel?: () => void              // callback opcional para cancelar/volver
+ *
+ * Comportamiento:
+ * - Componente de presentación; la lógica de envío se delega al prop onSubmit cuando exista.
+ * - Debe integrarse con validaciones en el contenedor o con state local según necesidad.
+ *
+ * Ejemplo:
+ * <CreateRequestForm onSubmit={handleCreate} onCancel={() => navigate('student-dashboard')} />
+ */
+
 import React, { useState } from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

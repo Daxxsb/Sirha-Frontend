@@ -1,3 +1,20 @@
+/**
+ * RequestHistory
+ *
+ * Historial de solicitudes pertenecientes al usuario (estudiante).
+ * Presenta un timeline con estado, fecha y acceso a los detalles.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Contiene resúmenes estadísticos y paginación.
+ * - handleLogout limpia la sesión y redirige si se implementa.
+ *
+ * Ejemplo:
+ * <RequestHistory onNavigate={navigate} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

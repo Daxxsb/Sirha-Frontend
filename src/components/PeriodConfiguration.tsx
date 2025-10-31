@@ -1,3 +1,21 @@
+/**
+ * PeriodConfiguration
+ *
+ * Interfaz para crear, editar y listar períodos en los que se permiten solicitudes
+ * (períodos de ajuste, regulares, extraordinarios).
+ *
+ * Props:
+ * - onBack: () => void
+ * - hasData?: boolean
+ *
+ * Comportamiento:
+ * - Muestra período activo destacado, lista de periodos y formulario para crear nuevos.
+ * - Los checkboxes y select reflejan reglas del periodo (p. ej. requerir aprobación).
+ *
+ * Ejemplo:
+ * <PeriodConfiguration onBack={() => navigate('admin-dashboard')} hasData={true} />
+ */
+
 import { ArrowLeft, Calendar, Save, Plus, Edit2, Trash2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
@@ -184,63 +202,4 @@ export function PeriodConfiguration({ onBack, hasData = false }: PeriodConfigura
                   <label className="text-sm text-gray-600 mb-2 block">Descripción (Opcional)</label>
                   <textarea
                     rows={3}
-                    placeholder="Descripción del período..."
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#990000]"
-                  />
-                </div>
-              </div>
-
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <h3 className="mb-4" style={{ fontWeight: 600 }}>Restricciones y Reglas</h3>
-                
-                <div className="space-y-3">
-                  <label className="flex items-center gap-3">
-                    <input type="checkbox" defaultChecked className="w-4 h-4 text-[#990000]" />
-                    <span className="text-sm">Permitir solicitudes automáticas</span>
-                  </label>
-                  <label className="flex items-center gap-3">
-                    <input type="checkbox" defaultChecked className="w-4 h-4 text-[#990000]" />
-                    <span className="text-sm">Requerir aprobación de Decanatura</span>
-                  </label>
-                  <label className="flex items-center gap-3">
-                    <input type="checkbox" className="w-4 h-4 text-[#990000]" />
-                    <span className="text-sm">Limitar número de solicitudes por estudiante</span>
-                  </label>
-                  <div className="ml-7">
-                    <input
-                      type="number"
-                      defaultValue="3"
-                      className="w-20 px-3 py-1 border border-gray-300 rounded-lg text-sm"
-                    />
-                    <span className="ml-2 text-sm text-gray-600">solicitudes máximo</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex justify-end gap-3 mt-6">
-                <Button variant="outline">
-                  Cancelar
-                </Button>
-                <Button className="bg-[#17C964] hover:bg-[#12A150]">
-                  <Save className="mr-2 h-4 w-4" />
-                  Guardar Período
-                </Button>
-              </div>
-            </Card>
-
-            {/* Información Adicional */}
-            <Card className="p-6 mt-6 border-l-4 border-[#006FEE]">
-              <h3 className="text-[#006FEE] mb-3" style={{ fontWeight: 600 }}>Información Importante</h3>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li>• Los períodos no pueden superponerse en fechas</li>
-                <li>• Solo puede haber un período activo a la vez</li>
-                <li>• Los estudiantes solo pueden crear solicitudes durante períodos activos</li>
-                <li>• Los períodos finalizados no pueden ser editados</li>
-              </ul>
-            </Card>
-          </>
-        )}
-      </div>
-    </div>
-  );
-}
+       

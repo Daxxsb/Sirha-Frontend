@@ -1,3 +1,20 @@
+/**
+ * PriorityRequestsView
+ *
+ * Vista para gestionar solicitudes según su prioridad (Alta, Media, Normal).
+ * Permite filtrar, ordenar y ejecutar acciones (aprobar/rechazar) en bloque o individual.
+ *
+ * Props:
+ * - onBack: () => void
+ * - hasData?: boolean
+ *
+ * Comportamiento:
+ * - Presenta tarjetas de conteo por prioridad y lista detallada con botones de acción.
+ *
+ * Ejemplo:
+ * <PriorityRequestsView onBack={() => navigate('decanatura-dashboard')} hasData />
+ */
+
 import { ArrowLeft, AlertCircle, Filter, ArrowUpDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";

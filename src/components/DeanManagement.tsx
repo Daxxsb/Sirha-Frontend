@@ -6,6 +6,24 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '.
 import { Input } from './ui/input';
 import { Plus, Edit, Trash2, Shield, ArrowLeft } from 'lucide-react';
 
+/**
+ * DeanManagement
+ *
+ * Interfaz para la gestión de decanos (crear / editar / listar).
+ * Nota: el componente mostrado en el repositorio está parcialmente implementado;
+ * este encabezado documenta su intención y props.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Controla la visibilidad del formulario interno (showForm).
+ * - Implementa handleLogout que borra userRole de localStorage.
+ *
+ * Ejemplo:
+ * <DeanManagement onNavigate={(s) => setScreen(s)} />
+ */
+
 export function DeanManagement({ onNavigate }: { onNavigate?: (screen: string) => void }) {
   const [showForm, setShowForm] = useState(false);
 

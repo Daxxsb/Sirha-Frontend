@@ -1,3 +1,20 @@
+/**
+ * ReportsDashboard
+ *
+ * Dashboard estadístico con visualizaciones (barras, pie) sobre solicitudes, tasas
+ * de aprobación, grupos solicitados y progreso académico.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Renderiza componentes de tipo chart (recharts) y ofrece acciones de exportación.
+ * - handleLogout limpia sesión y puede redirigir al login.
+ *
+ * Ejemplo:
+ * <ReportsDashboard onNavigate={navigate} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

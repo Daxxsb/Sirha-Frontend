@@ -1,3 +1,19 @@
+/**
+ * StudentDashboard
+ *
+ * Panel principal para estudiantes: accesos rápidos, horario actual, y resumen de solicitudes.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Provee navegación a vistas como crear solicitud, historial y semáforo académico.
+ * - handleLogout limpia sesión en localStorage.
+ *
+ * Ejemplo:
+ * <StudentDashboard onNavigate={(s) => setScreen(s)} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

@@ -1,3 +1,20 @@
+/**
+ * GroupCapacityMonitor
+ *
+ * Interfaz administrativa para monitorear ocupación de grupos y recibir alertas
+ * por % de uso (disponible / cerca al 90% / lleno).
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Presenta métricas rápidas, lista de grupos con barras de ocupación y recomendaciones.
+ * - handleLogout limpia el estado de sesión del localStorage y redirige.
+ *
+ * Ejemplo:
+ * <GroupCapacityMonitor onNavigate={navigate} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

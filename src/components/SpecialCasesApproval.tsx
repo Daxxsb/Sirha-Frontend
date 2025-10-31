@@ -1,3 +1,20 @@
+/**
+ * SpecialCasesApproval
+ *
+ * Interfaz para revisar y decidir sobre casos excepcionales (médicos, laborales, movilidad).
+ * Incluye documentos adjuntos, justificaciones y área para la decisión.
+ *
+ * Props:
+ * - onBack: () => void
+ * - hasData?: boolean
+ *
+ * Comportamiento:
+ * - Muestra lista de casos, detalle por caso y acciones: solicitar más info, rechazar o aprobar.
+ *
+ * Ejemplo:
+ * <SpecialCasesApproval onBack={goBack} hasData />
+ */
+
 import { ArrowLeft, AlertTriangle, FileText, CheckCircle, XCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";

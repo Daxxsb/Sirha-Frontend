@@ -1,3 +1,20 @@
+/**
+ * AcademicTrafficLight
+ *
+ * Presenta un "semáforo" visual del progreso académico del estudiante (por rangos).
+ * Muestra métricas resumidas y enlaces a detalle del progreso.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Componente puramente visual para el dashboard del estudiante.
+ * - Acepta callback de navegación para abrir vistas relacionadas.
+ *
+ * Ejemplo:
+ * <AcademicTrafficLight onNavigate={navigate} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

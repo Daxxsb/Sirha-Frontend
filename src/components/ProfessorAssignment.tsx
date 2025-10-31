@@ -1,3 +1,21 @@
+/**
+ * ProfessorAssignment
+ *
+ * Herramienta administrativa para asignar o retirar profesores de grupos.
+ * Muestra grupos, ocupación y lista de profesores disponibles.
+ *
+ * Props:
+ * - onBack: () => void
+ * - hasData?: boolean
+ *
+ * Comportamiento:
+ * - proporciona acciones (Asignar, Retirar, Reasignar) en cada grupo.
+ * - Estadísticas y lista de profesores sirven como apoyo a la decisión.
+ *
+ * Ejemplo:
+ * <ProfessorAssignment onBack={() => navigate('admin-dashboard')} hasData />
+ */
+
 import { ArrowLeft, UserPlus, UserMinus, Search } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";

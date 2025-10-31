@@ -1,3 +1,19 @@
+/**
+ * ProfessorManagement
+ *
+ * Panel RUD para profesores: listar, editar, eliminar y exportar registros.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Incluye búsqueda, tabla de profesores y acciones por fila.
+ * - handleLogout limpia la sesión y redirige al login.
+ *
+ * Ejemplo:
+ * <ProfessorManagement onNavigate={(s) => setScreen(s)} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

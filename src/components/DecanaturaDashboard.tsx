@@ -1,3 +1,19 @@
+/**
+ * DecanaturaDashboard
+ *
+ * Panel para usuarios de decanatura: revisión y decisión sobre solicitudes académicas.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - Ofrece filtros, lista de solicitudes y acciones de paginación.
+ * - El método handleLogout limpia la sesión y redirige al login vía onNavigate.
+ *
+ * Ejemplo:
+ * <DecanaturaDashboard onNavigate={(screen) => setScreen(screen)} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

@@ -1,3 +1,21 @@
+/**
+ * AcademicHistory
+ *
+ * Componente presentación que muestra el historial académico del estudiante.
+ * Documenta materias cursadas, créditos, notas y progreso del plan de estudios.
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *   Función opcional para navegar a otras pantallas dentro del wireframe.
+ *
+ * Comportamiento:
+ * - Es un componente de UI (sin lógica de negocio compleja).
+ * - Recibe callbacks de navegación para integrarse con el sistema de routing interno.
+ *
+ * Ejemplo de uso:
+ * <AcademicHistory onNavigate={(screen) => setScreen(screen)} />
+ */
+
 import React from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

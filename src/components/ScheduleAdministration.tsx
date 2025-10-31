@@ -1,3 +1,20 @@
+/**
+ * ScheduleAdministration
+ *
+ * Panel para administrar y asignar horarios a grupos: vista de cuadrícula por
+ * días y franjas horarias, edición de aula y verificación de conflictos.
+ *
+ * Props:
+ * - onBack: () => void
+ * - hasData?: boolean
+ *
+ * Comportamiento:
+ * - Muestra tabla de disponibilidad por día/hora y permite guardar cambios.
+ *
+ * Ejemplo:
+ * <ScheduleAdministration onBack={() => navigate('admin-dashboard')} hasData />
+ */
+
 import { ArrowLeft, Clock, Save, Calendar } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";

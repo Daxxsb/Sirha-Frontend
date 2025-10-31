@@ -1,3 +1,25 @@
+/**
+ * src/App.tsx
+ *
+ * Aplicación principal (SPA) — Punto de entrada para demostración local.
+ *
+ * Propósito:
+ * - Centraliza la navegación entre pantallas/dashboards incluidas en `src/components`.
+ * - Expone un estado interno `currentScreen` para seleccionar qué pantalla renderizar.
+ *
+ * Contrato y convenciones:
+ * - Tipo `Screen` enumera todas las pantallas soportadas. Al añadir una pantalla,
+ *   agregarla al tipo `Screen`, crear/importar el componente y añadir un case en el switch.
+ * - `onNavigate: (screen: Screen) => void` es la forma estándar de navegación entre pantallas.
+ *
+ * Notas de mantenimiento:
+ * - Evitar dejar texto de placeholder con marcas de diseño (emojis, "Figma", "WIP"). Usar mensajes neutrales
+ *   y, si es necesario, un componente "ComingSoon" reutilizable.
+ * - Para producción, reemplazar esta lógica por un enrutador (React Router / Next.js routes) si se requiere
+ *   navegación real, o convertir cada pantalla en una ruta independiente.
+ * - Mantener las importaciones de componentes agrupadas por dominio (estudiante, administración, etc.).
+ */
+
 import { useState } from 'react';
 import { LoginWireframe } from "./components/LoginWireframe";
 import { StudentDashboard } from "./components/StudentDashboard";
@@ -32,6 +54,10 @@ import { PeriodConfiguration } from "./components/PeriodConfiguration";
 import { ReportExport } from "./components/ReportExport";
 import { NavigationMap } from "./components/NavigationMap";
 
+/**
+ * Tipos de pantalla disponibles en la aplicación.
+ * Añadir nuevas pantallas aquí y en el switch más abajo.
+ */
 type Screen = 
   | 'login' 
   | 'student-dashboard' 
@@ -66,6 +92,11 @@ type Screen =
   | 'report-export'
   | 'navigation-map';
 
+/**
+ * Componente raíz
+ * - Mantiene el estado de navegación local (uso didáctico).
+ * - `handleNavigate` es la API que deben usar las pantallas hijas para cambiar de vista.
+ */
 export default function App() {
   const [currentScreen, setCurrentScreen] = useState<Screen>('login');
 
@@ -73,17 +104,25 @@ export default function App() {
     setCurrentScreen(screen);
   };
 
+  /**
+   * Placeholder profesional y neutral para pantallas no implementadas.
+   * - Evita emojis y referencias a herramientas de diseño (p. ej. Figma).
+   * - Texto claro y acción para volver a una pantalla conocida.
+   */
   const renderPlaceholder = (screenName: string, backScreen: Screen = 'student-dashboard') => (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <div className="text-center max-w-md">
-        <div className="w-16 h-16 bg-[#990000] mx-auto mb-4 flex items-center justify-center rounded-full">
-          <span className="text-white font-bold text-xl">🚧</span>
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
+      <div className="text-center max-w-lg">
+        <div className="w-16 h-16 bg-gray-200 mx-auto mb-4 flex items-center justify-center rounded-full">
+          {/* decoración neutral */}
         </div>
-        <h1 className="text-2xl font-bold text-[#990000] mb-2">{screenName}</h1>
-        <p className="text-gray-600 mb-6">Esta funcionalidad está actualmente en desarrollo.</p>
+        <h1 className="text-2xl font-semibold text-gray-900 mb-2">{screenName}</h1>
+        <p className="text-gray-600 mb-6">
+          Esta funcionalidad aún no está disponible. Se trabajará en su implementación próximamente.
+        </p>
         <button 
           onClick={() => handleNavigate(backScreen)}
-          className="bg-[#990000] text-white px-6 py-2 rounded-lg hover:bg-[#770000] transition-colors font-medium"
+          className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors font-medium"
+          aria-label="Volver al dashboard"
         >
           Volver al Dashboard
         </button>
@@ -159,6 +198,7 @@ export default function App() {
       return <NavigationMap onNavigate={handleNavigate} />;
     
     default:
+      // fallback seguro: muestra login
       return <LoginWireframe onNavigate={handleNavigate} />;
   }
 }

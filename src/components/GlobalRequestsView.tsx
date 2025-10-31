@@ -1,3 +1,21 @@
+/**
+ * GlobalRequestsView
+ *
+ * Vista consolidada para consultar solicitudes a nivel de facultad/decanatura.
+ * Permite búsqueda, filtrado y exportación del conjunto de datos.
+ *
+ * Props:
+ * - onBack: () => void       // acción para volver a la pantalla anterior
+ * - hasData?: boolean        // si false muestra estado vacío / loading
+ *
+ * Comportamiento:
+ * - Muestra tarjetas de estadística, tabla de resultados y paginación.
+ * - El botón de exportar se habilita cuando hasData === true.
+ *
+ * Ejemplo:
+ * <GlobalRequestsView onBack={() => navigate('admin-dashboard')} hasData={true} />
+ */
+
 import { ArrowLeft, Filter, Search, Download, Eye } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";

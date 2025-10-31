@@ -1,3 +1,20 @@
+/**
+ * SubjectGroupManagement
+ *
+ * Panel CRUD para materias y grupos: crear grupos, editar cupos, asignar profesores
+ * y revisar el estado de los grupos (activo/lleno).
+ *
+ * Props:
+ * - onNavigate?: (screen: string) => void
+ *
+ * Comportamiento:
+ * - showForm controla la visibilidad del formulario para crear un nuevo grupo.
+ * - handleLogout limpia sesión y redirige al login.
+ *
+ * Ejemplo:
+ * <SubjectGroupManagement onNavigate={navigate} />
+ */
+
 import React, { useState } from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';

@@ -1,3 +1,20 @@
+/**
+ * ReportExport
+ *
+ * Interfaz para generar y descargar reportes en varios formatos (PDF, Excel, CSV, JSON).
+ *
+ * Props:
+ * - onBack: () => void
+ * - hasData?: boolean
+ *
+ * Comportamiento:
+ * - Permite seleccionar tipo de reporte, formato, rango de fechas y filtros adicionales.
+ * - Muestra reportes predefinidos y historial de exportaciones.
+ *
+ * Ejemplo:
+ * <ReportExport onBack={() => navigate('reports-dashboard')} hasData />
+ */
+
 import { ArrowLeft, Download, FileText, FileSpreadsheet, Printer, Calendar } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
