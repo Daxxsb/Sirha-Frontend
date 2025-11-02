@@ -12,7 +12,6 @@ Este repositorio contiene el **Frontend del sistema SIRHA (Sistema de Reasignaci
 - React Router v6
 - Netlifly (despliegue)
 
-## Estructura de Carpetas
 ## Estructura del Proyecto
 
 #### Agrupación por Tipos de Archivos - Estructura clásica que organiza los archivos por su tipo/extensión más que por funcionalidad.
@@ -53,7 +52,7 @@ Sirha-Frontend/
     - Configuración académica
     - Reportes y estadísticas
 
-# Principios UX y Heurísticas de Nielsen Aplicados en SIRHA
+## Principios UX y Heurísticas de Nielsen Aplicados en SIRHA
 
 ## **Principios de Diseño Centrado en el Usuario**
 
