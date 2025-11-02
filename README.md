@@ -156,10 +156,6 @@ Login → Dashboard → Crear Solicitud → Confirmación
 
 ---
 
-
-## Levantamiento del Proyecto
-http://localhost:5173/
-
 ## Diseño y Mockups
 Los mockups de baja fidelidad fueron generados en Figma, siguiendo el Manual de Identidad (tipografía Work Sans y colores institucionales).
 Incluyen las pantallas principales por rol (Estudiante, Decanatura, Administrador).
