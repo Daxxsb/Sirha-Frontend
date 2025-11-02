@@ -81,7 +81,7 @@ Sirha-Frontend/
 
 ### 5. **Flujo de Trabajo Intuitivo**
 ```
-Login → Dashboard → Ver Horario → Crear Solicitud → Confirmación
+Login → Dashboard → Crear Solicitud → Confirmación
 ```
 
 ### 6. **Feedback Inmediato**
