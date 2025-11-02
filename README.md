@@ -10,10 +10,10 @@ Este repositorio contiene el **Frontend del sistema SIRHA (Sistema de Reasignaci
 - React + Vite
 - Material UI (UI Components)
 - React Router v6
-- Vercel (despliegue)
+- Netlifly (despliegue)
 
 ## Estructura de Carpetas
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 #### Agrupación por Tipos de Archivos - Estructura clásica que organiza los archivos por su tipo/extensión más que por funcionalidad.
 ```bash
@@ -47,6 +47,7 @@ Sirha-Frontend/
   - Revisión de solicitudes pendientes
   - Aprobación/Rechazo de solicitudes
   - Gestión de casos especiales
+ 
 - Administrador
     - Gestión de usuarios y roles
     - Configuración académica
